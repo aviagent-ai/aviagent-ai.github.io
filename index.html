@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviagent.ai - Intelligent Co-pilots for Modern Business</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-color: #111827;
+            background-image: radial-gradient(circle at 30% 70%, rgba(79, 70, 229, 0.1), transparent 50%),
+                              radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.1), transparent 50%);
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header -->
+    <header class="bg-gray-900/80 backdrop-blur-sm fixed w-full z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">Aviagent<span class="text-indigo-400">.ai</span></a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#specialties" class="hover:text-indigo-400 transition-colors">Specialties</a>
+                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+            </div>
+            <a href="#contact" class="hidden md:block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg cta-button">
+                Get a Quote
+            </a>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-700">About</a>
+            <a href="#services" class="block py-2 px-4 text-sm hover:bg-gray-700">Services</a>
+            <a href="#specialties" class="block py-2 px-4 text-sm hover:bg-gray-700">Specialties</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg pt-32 pb-20">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-4">Intelligent Co-pilots for Modern Business</h1>
+                <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-8">We engineer bespoke AI agents trained on your business data, speaking your language and understanding your unique challenges.</p>
+                <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-lg text-lg cta-button inline-block">
+                    Request a Demo
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-white mb-4">About Aviagent.ai</h2>
+                        <p class="text-gray-400 mb-4">
+                            Headquartered in Mumbai, Maharashtra, we build intelligent co-pilots for modern business. We engineer bespoke AI agents that operate with the precision of a pilot and the deep intelligence of advanced language models.
+                        </p>
+                        <h3 class="text-2xl font-semibold text-white mt-6 mb-2">Our Philosophy</h3>
+                        <p class="text-gray-400">
+                            Our name combines "Aviation" (representing high-level vision and limitless reach) with "Agent" (the intelligent system that acts decisively on your behalf). This duality drives our mission: to provide businesses with a clear, panoramic view of their operations and the automated tools to act on that intelligence with speed and accuracy.
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-indigo-500 opacity-10 rounded-lg transform -rotate-3"></div>
+                        <img src="https://placehold.co/600x400/111827/FFFFFF?text=Aviagent.ai" alt="AI Technology" class="rounded-lg shadow-2xl relative" onerror="this.onerror=null;this.src='https://placehold.co/600x400/111827/FFFFFF?text=Image+Not+Found';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-white">What We Do</h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto mt-2">We specialize in crafting custom AI solutions that go beyond generic platforms.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-gray-800 p-8 rounded-lg feature-card">
+                        <div class="bg-indigo-500/10 text-indigo-400 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Custom AI Agents</h3>
+                        <p class="text-gray-400">Developing intelligent agents that automate complex workflows, from data analysis to customer interaction.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-gray-800 p-8 rounded-lg feature-card">
+                         <div class="bg-indigo-500/10 text-indigo-400 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Vision AI Systems</h3>
+                        <p class="text-gray-400">Leveraging state-of-the-art models like YOLO to extract real-time insights from images and video.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-gray-800 p-8 rounded-lg feature-card">
+                         <div class="bg-indigo-500/10 text-indigo-400 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Private LLM Integration</h3>
+                        <p class="text-gray-400">Fine-tuning and deploying Large Language Models on your private data for a secure, hyper-aware knowledge base.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialties Section -->
+        <section id="specialties" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-white">Our Specialties</h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto mt-2">We are experts in a wide range of AI technologies and strategies.</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-2 rounded-full">Artificial Intelligence (AI)</span>
+                    <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-2 rounded-full">Custom AI Agents</span>
+                    <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-2 rounded-full">Vision AI</span>
+                    <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-2 rounded-full">Large Language Models (LLMs)</span>
+                    <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-2 rounded-full">Business Process Automation</span>
+                    <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-2 rounded-full">YOLO</span>
+                    <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-2 rounded-full">Machine Learning</span>
+                    <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-2 rounded-full">Natural Language Processing (NLP)</span>
+                    <span class="bg-gray-700 text-gray-300 text-sm font-medium px-4 py-2 rounded-full">AI Strategy</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-white">Let's Build Together</h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto mt-2">We are your dedicated AI partner, committed to delivering solutions that provide clarity, enhance efficiency, and unlock limitless potential.</p>
+                </div>
+                <div class="max-w-2xl mx-auto bg-gray-800 p-8 rounded-lg">
+                    <form>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <input type="text" placeholder="Your Name" class="w-full bg-gray-700 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <input type="email" placeholder="Your Email" class="w-full bg-gray-700 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                        <div class="mt-6">
+                            <input type="text" placeholder="Subject" class="w-full bg-gray-700 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                        <div class="mt-6">
+                            <textarea placeholder="Your Message" rows="5" class="w-full bg-gray-700 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                        </div>
+                        <div class="mt-6 text-center">
+                            <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-lg text-lg cta-button">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 border-t border-gray-700">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+            <p>&copy; 2024 Aviagent.ai. All rights reserved.</p>
+            <p class="text-sm mt-1">Headquartered in Mumbai, Maharashtra</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
